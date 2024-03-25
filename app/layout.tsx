@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Lexend } from "next/font/google";
 import "./globals.css";
 
-const poppins = Poppins({ subsets: ["latin"] }), weight: ["300", "400", "800"]
+const lexend = Lexend({ subsets: ["latin"], 
+weight: ["300", "400", "800"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={lexend.className}>{children}</body>
     </html>
   );
 }
