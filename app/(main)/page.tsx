@@ -1,9 +1,9 @@
-import Image from "next/image";
+import ButtonSwiper from "@/components/ButtonSwiper";
 
-export default function SplashScreen() {
+export default function SplashScreen({ menu}) {
   return (
     
-    <div className="min-h-[110vh] bg-gradient-to-b from-white to-yellow-300">
+    <div className="min-h-[120vh] bg-gradient-to-b from-white to-yellow-300">
        <div className="flex flex-row p-10 justify-between">
          <img className="w-[50px] rounded-full" src="/menu_button.svg" />
          <img className="w-[50px] rounded-full" src="/setting_button.svg" />
@@ -37,13 +37,14 @@ export default function SplashScreen() {
        </div>
 
        <div className="justify-center flex flex-row items-center mb-20">
-          <div className="justify-center flex flex-row items-center border-solid 
-           border-2 border-black rounded-full p-2" >
-            <img className="ml-5 w-[25px]" src="/add_icon.svg"/>
-            <h2 className="mr-5 uppercase font-sans font-medium p-2"> Add to diet </h2>
-          </div>
-          <img className="w-[60px] ml-5" src="/enter_button.svg"/>
-       </div>
+            <div className="justify-center flex flex-row items-center border-solid 
+             border-2 border-black rounded-full p-2" >
+                <img className="ml-5 w-[25px]" src="/add_icon.svg"/>
+                <h2 className="mr-5 uppercase font-sans font-medium p-2"> Add to diet </h2>
+           </div>
+           
+           <img className="w-[60px] ml-5" src="/enter_button.svg"/>
+        </div>
 
     </div>
     )
